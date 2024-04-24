@@ -1,14 +1,12 @@
-# Report title goes here
+# Cloud Classification App: A flutter based application to classify cloud type
 
-Name of author, link to github repo with project work in / link to Edge Impulse projects
+Author name: Satria Mitra Utama<br> 
+Github repo: https://github.com/satria-mitra/CASA0018-Cloud-Classification <br> 
+Video presentation: youtube <br> 
 
 ## Introduction
-- an overview of what the project does
-- your inspiration for making the project 
-- examples that it is based on. 
-
-*Tip: probably ~200 words and images are good!*
-
+I. 
+This project is a cloud type classificator based on a deep learning model
 ## Research Question
 What is the problem you are trying to solve
 
