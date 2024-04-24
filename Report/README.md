@@ -9,6 +9,11 @@ Clouds play a crucial role in our daily lives, affecting everything from the wea
 
 Cloud types are divided into 4 large groups, namely low level, middle level, and nimbus cloud. Each of these groups is further divided into 10 cloud types based on the International Cloud Atlas Weather Meteorological Organizations. (World Meteorological Organizations, 1975)
 
+<p align="center" width="100%">
+    <img width="60%" src="./assets/pictures/bom.jpeg"> 
+</p>
+
+
 
 
 
