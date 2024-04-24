@@ -11,6 +11,7 @@ Cloud types are divided into 4 large groups, namely low level, middle level, and
 
 
 
+
 ## Research Question
 Can cloud be classified on real-time event based on the images input by leveraging a deep learning model on an edge device (like mobilephone) ?
 
