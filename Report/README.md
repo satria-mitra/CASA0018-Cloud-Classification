@@ -31,18 +31,18 @@ Regarding the total pictures for the 4 categories, there is a data imbalance bet
 
 
 ## Model
-Experimen dilakukan untuk mendapatkan akurasi terbaik dari sesi pengetesan. 3 model berdasarkan Keras framework dikembangkan untuk mengetahui hasil terbaik untuk mengklasifikasikan awan. The first one is Keras sequential model, the second one is Transfer Learning, and the last one is Fine-tuning the pre-trained model. Dari hasil percobaan yang dijabarkan pada table dibawah terlihat bahwa mempunyai performa terbaik dari segi akurasi 
+Experiments are carried out to get the best accuracy from the testing session. 3 models based on Keras framework were developed to find out the best results for classifying clouds. The first one is Keras sequential model, the second one is Transfer Learning, and the last one is Fine-tuning the pre-trained model. From the experimental results described in the table below, it can be seen that it has the best performance in terms of accuracy
 
 ## Experiments
-Eksperimen difokuskan pada model xxx yang terbukti memiliki hasil akurasi terbaik pada sesi pengetesan sebelumnya. xxx parameters yang terlihat pada table xx diuji coba untuk mengetahui lebih jauh performa model xxx. Experimen berfokus kepada optimasi jumlah epoh, batch size dan jenis optimizer
-- Optimizer : Percobaan pertama adalah mencoba 3 jneis optimizer dengan learning rate dan batch size fixed as 0.001 dan 32. Aku mengevaluasi optimizer berdasarkan skor akurasi pada validasi tes. Table xx menunjukan skor akurasi yang berbeda untuk setiap macam optimizers. Terlihat bahwa xxxx optimiser menunjukan hasil akurasi terbaik
+The experiment focused on the xxx model which was proven to have the best accuracy results in the previous testing session. The xxx parameters shown in table xx were tested to find out more about the performance of the xxx model. The experiments focused on optimizing the number of epohs, batch size and type of optimizer
+- Optimizer: The first experiment was to try 3 types of optimizer with learning rate and batch size fixed as 0.001 and 32. I evaluated the optimizer based on the accuracy score on the validation test. Table xx shows the different accuracy scores for each type of optimizer. It can be seen that xxxx optimizer shows the best accuracy results
 - Learning rate
 - Batch Size
 
-Setelah experiment selesai dilakukan, parameters yang dipilih adalah
+After the experiment is complete, the parameters selected are:
 
 ## Testing on real-world
-Aku melakukan percobaan dengan mendeploy model Tensor Flow pada mobile phone berbasis aplikasi Flutter. Ada beberapa alasan kenapa mobile phone dipilih ketimbang microcontroller. Pertama, aplikasi mobile yang terintegrasi dengan Deep Learning model dapat dikembangkan untuk dapat mengambil gambar atau menggunakan foto dari internet untuk membedakan tipe awan secara cepat. Pengguna dapat langsung mengeluarkan mobile phonenya dan mengarahkan ke langit untuk dapat mengetahui jenis awan yang tidak dikenalinya secara langsung. Kedua, mengingat kompleksitas dari image classification model, mobile phone mempunyai keunggulan dalam hal penyimpanan model yang kompleks, rapid in inference dan kemampuan foto resolusi tinggi. Eksperimen dunia nyata menunjukan bahwa aplikasi dapat bekerjda pada siang hari . Current
+Experiment conducted by deploying the Tensor Flow model on a mobile phone based on the Flutter application. There are several reasons why mobile phones are chosen over microcontrollers. First, a mobile application that is integrated with a Deep Learning model can be developed to be able to take pictures or use photos from the internet to quickly differentiate cloud types. Users can immediately take out their mobile phone and point it at the sky to find out what types of clouds they don't recognize directly. Second, considering the complexity of the image classification model, mobile phones have advantages in terms of storing complex models, rapid inference and high resolution photo capabilities. Real-world experiments show that the application can work during the day. 
 
 ## Results and Observations
 1. Data
