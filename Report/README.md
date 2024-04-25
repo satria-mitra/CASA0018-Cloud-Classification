@@ -1,4 +1,4 @@
-# Cloud Classification App: A AIoT application to classify cloud type
+# Cloud Classification App: An application to classify cloud type in realtime
 
 Author name: Satria Mitra Utama<br> 
 Github repo: https://github.com/satria-mitra/CASA0018-Cloud-Classification <br> 
