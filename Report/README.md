@@ -42,15 +42,59 @@ Regarding the total pictures for the 4 categories, there is a data imbalance bet
 
 
 ## Model
-Experiments are carried out to get the best accuracy from the testing session. 3 models based on Keras framework were developed to find out the best results for classifying clouds. The first one is Keras sequential model, the second one is Transfer Learning, and the last one is Fine-tuning the pre-trained model. From the experimental results described in the table below, it can be seen that it has the best performance in terms of accuracy
+25 models were developed to get the best accuracy from the testing sessions. 3 models based on Keras framework were developed to find out the best results for classifying clouds. The first is Keras sequential model, the second is Transfer Learning, and the last is Fine-tuning a pre-trained model. From the experimental results described in the table below, it can be seen that VGG16 with epoch 64 has the best performance in terms of accuracy. Further tested parameters for VGG16 will be described in the next section. For the refinement model based on VGG16, it was found that the experiments did not bring significant improvements in validation and testing accuracy. It can be difficult to find the best number of layers to retrain. More experiments are needed to explore this model. Due to limited time for project work, VGG16-based transfer learning was chosen because it gave the best results even though the accuracy was below 75%. More performance metrics can be found in this section.
+
+<p align="center">Table 1. Model table</p>
+
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/table.png"> 
+</p>
+
+<p align="center">Table 2. Standard environment    </p>
+
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/env.png"> 
+</p>
+
+This is the summary of experiments done in this project. The best parameters were choosen based on the accuracy.
 
 ## Experiments
-The experiment focused on the xxx model which was proven to have the best accuracy results in the previous testing session. The xxx parameters shown in table xx were tested to find out more about the performance of the xxx model. The experiments focused on optimizing the number of epohs, batch size and type of optimizer
-- Optimizer: The first experiment was to try 3 types of optimizer with learning rate and batch size fixed as 0.001 and 32. I evaluated the optimizer based on the accuracy score on the validation test. Table xx shows the different accuracy scores for each type of optimizer. It can be seen that xxxx optimizer shows the best accuracy results
-- Learning rate
-- Batch Size
+The experiment focused on the VGG16 on epoch 64 model which was proven to have the best accuracy results in the previous testing session. More experiments were conducted on this model to explore more possibilites to obtain better accuracy. The experiments focused on optimizing the number of batch size, optimizer and learning type
+- Batch Size : The selection of batch size affects the update of weights and bias. Smaller batch size would give result lesser samples and bigger batch size give more samples. I evaluate two batch sizes, 32 and 64, based on the accuracy scores. From this experiment,  batch size 64 did not bring any improvement.
+  <p align="center">Table 3. Batch Size    </p>
 
-After the experiment is complete, the parameters selected are:
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/batch.png"> 
+</p>
+  
+- Optimizer: I tried to experiment with different optimizer with the learning rate and batch size 0.001 and 64 respectively. The optimizer evaluated on the basis of accuracy score. The table below depicts the accuracy score of different optimizers. The result shows that adam was still the best choice for optimizer
+    <p align="center">Table 4. Optimizer    </p>
+
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/optimizer.png"> 
+</p>
+
+After the experiment is complete, the parameters selected are based on these parameters. To see detailed experiment that were done in this project, see the table below
+- Models : Transfer learning VGG16
+- Number of epoch : 64
+- Number of batch size : 64
+- Optimizer : adam
+- Activation function : softmax
+
+<p align="center">Table 5. Summary of experiments</p>
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/summary.png"> 
+</p>
+
+<p align="center" width="50%">
+    <img width="50%" src="./assets/pictures/chart.png"> 
+</p>
+<p align="center" width="50%">
+    <img width="50%" src="./assets/pictures/loss.png"> 
+</p>
+
+
+
 
 ## Testing on real-world
 Experiment conducted by deploying the Tensor Flow model on a mobile phone based on the Flutter application. There are several reasons why mobile phones are chosen over microcontrollers. First, a mobile application that is integrated with a Deep Learning model can be developed to be able to take pictures or use photos from the internet to quickly differentiate cloud types. Users can immediately take out their mobile phone and point it at the sky to find out what types of clouds they don't recognize directly. Second, considering the complexity of the image classification model, mobile phones have advantages in terms of storing complex models, rapid inference and high resolution photo capabilities. Real-world experiments show that the application can work during the day. 
