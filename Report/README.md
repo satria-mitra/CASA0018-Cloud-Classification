@@ -24,7 +24,9 @@ Can cloud be classified on real-time event based on the images input by leveragi
 This project will try to classify cloud into 3 types of cloud plus additional of contrail, the condensation trail that is left behind by a passing jet plane. The goal of this project is to develop a deep learning model that can accurately classify different types of clouds based on ground-based cloud images. The image input is a picture taken on the smartphone by using a Flutter based application with Tensorflow library installed. Tensorflow model will run on the Flutter app, and detect and classify image on the go. Deep learning model is built, trained and converted to the Tensorflow lite model in the Google Colab environment. 
 
 
-
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/flowchart.png"> 
+</p>
 
 ## Data
 Initially, CCSN dataset (Cirrus cumulus stratus nimbus (CCSN) database, 2021) which classify cloud into 10 types + 1 contrail is being collected. For simplicity and as a prove concet of Deep Learning, this dataset is modified, merging some cloud types into 3 types of cloud based on their height level with contrail picture is added. A little inspection was done to check and remove for dirty picture, where there is too much additional 'information' on the cloud picture such as building or landscape. This cleaning step is crucial as the project would like to deploy a deep learning model in the real condition.
