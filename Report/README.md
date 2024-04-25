@@ -1,4 +1,4 @@
-![image](https://github.com/satria-mitra/CASA0018-Cloud-Classification/assets/145175043/9ae92786-0539-41b1-9972-412c9e408ad6)# Cloud Classification App: An application to classify cloud type in realtime
+# Cloud Classification App: An application to classify cloud type in realtime
 
 Author name: Satria Mitra Utama<br> 
 Github repo: https://github.com/satria-mitra/CASA0018-Cloud-Classification <br> 
