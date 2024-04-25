@@ -106,6 +106,11 @@ After the experiment is complete, the parameters selected are based on these par
 ## Testing on real-world
 Experiment conducted by deploying the Tensor Flow model on a mobile phone based on the Flutter application. There are several reasons why mobile phones are chosen over microcontrollers. First, a mobile application that is integrated with a Deep Learning model can be developed to be able to take pictures or use photos from the internet to quickly differentiate cloud types. Users can immediately take out their mobile phone and point it at the sky to find out what types of clouds they don't recognize directly. Second, considering the complexity of the image classification model, mobile phones have advantages in terms of storing complex models, rapid inference and high resolution photo capabilities. Real-world experiments show that the application can work during the day. 
 
+<p align="center" width="50%">
+    <img width="50%" src="./assets/pictures/WhatsApp Image 2024-04-25 at 16.49.32 (1).jpeg"> 
+</p>
+
+
 ## Results and Observations
 1. Data Collection
 Datasets is limited, user have to add his own datasets
