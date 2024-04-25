@@ -1,4 +1,4 @@
-# Cloud Classification App: An application to classify cloud type in realtime
+![image](https://github.com/satria-mitra/CASA0018-Cloud-Classification/assets/145175043/9ae92786-0539-41b1-9972-412c9e408ad6)# Cloud Classification App: An application to classify cloud type in realtime
 
 Author name: Satria Mitra Utama<br> 
 Github repo: https://github.com/satria-mitra/CASA0018-Cloud-Classification <br> 
@@ -73,7 +73,12 @@ The experiment focused on the VGG16 on epoch 64 model which was proven to have t
 <p align="center" width="100%">
     <img width="70%" src="./assets/pictures/optimizer.png"> 
 </p>
+- Epoch Size : The epoch size is being selected as a parameter to tweak the models. The choice is 16, 32, and 64. Table below details how this epoch can make a higher accuracy for the project
+    <p align="center">Table 5. Epoch   </p>
 
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/epoch.png"> 
+</p>
 After the experiment is complete, the parameters selected are based on these parameters. To see detailed experiment that were done in this project, see the table below
 - Models : Transfer learning VGG16
 - Number of epoch : 64
@@ -93,16 +98,25 @@ After the experiment is complete, the parameters selected are based on these par
     <img width="50%" src="./assets/pictures/loss.png"> 
 </p>
 
-
+<p align="center" width="50%">
+    <img width="50%" src="./assets/pictures/matrix.png"> 
+</p>
 
 
 ## Testing on real-world
 Experiment conducted by deploying the Tensor Flow model on a mobile phone based on the Flutter application. There are several reasons why mobile phones are chosen over microcontrollers. First, a mobile application that is integrated with a Deep Learning model can be developed to be able to take pictures or use photos from the internet to quickly differentiate cloud types. Users can immediately take out their mobile phone and point it at the sky to find out what types of clouds they don't recognize directly. Second, considering the complexity of the image classification model, mobile phones have advantages in terms of storing complex models, rapid inference and high resolution photo capabilities. Real-world experiments show that the application can work during the day. 
 
 ## Results and Observations
-1. Data
-2. d
-3. 
+1. Data Collection
+Datasets is limited, user have to add his own datasets
+2. Model and experiment**
+Cloud type is difficult to classify because there are too many noise in the picture
+Too many class is not really good for a simple Deep Learning with limited resource to build this app
+3. Real world application**
+The accuracy for below <75 is quite low, so it is difficult to classify cloud in realtime
+
+
+
 ## Bibliography
 1. Cai, K. and Wang, H. (2017) Cloud classification of satellite image based on convolutional neural networks. Available at: https://doi.org/10.1109/icsess.2017.8343049.
 https://doi.org/10.1088/1742-6596/1617/1/012089.
