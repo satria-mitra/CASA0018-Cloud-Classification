@@ -12,7 +12,7 @@ Luke Howard in 1802 proposed cloud classification into three types, Cirrus, Cumu
 <p align="center" width="100%">
     <img width="60%" src="./assets/pictures/bom.jpeg"> 
 </p>
-
+<p align="center">Figure 1. Cloud type</p>
 Until now, observations of cloud types by meteorologists are still mostly done manually using the human eye. Even though the human eye can recognize cloud types well, there are still many differences of opinion among meteorologists in recognizing cloud types. This is where Deep learning methods come into play, as they can automatically extract features from cloud images and classify them.Some Deep Learning method use cloud images from satelite data (Cai, K. and Wang, H., 2017) (Guo, Y. et al., 2020) for cloud classification, while others use ground-based cloud images captured by instruments like the total sky imager (Zhu, T., Liang, W. and Guo, Y., 2021).
 The goal of this project is to develop a deep learning model that can accurately classify different types of clouds based on ground-based cloud images 
 
@@ -27,9 +27,15 @@ This project will try to classify cloud into 3 types of cloud plus additional of
 <p align="center" width="100%">
     <img width="70%" src="./assets/pictures/flowchart.png"> 
 </p>
+<p align="center">Figure 2. Cloud classification model</p>
 
 ## Data
-Initially, CCSN dataset (Cirrus cumulus stratus nimbus (CCSN) database, 2021) which classify cloud into 10 types + 1 contrail is being collected. For simplicity and as a prove concet of Deep Learning, this dataset is modified, merging some cloud types into 3 types of cloud based on their height level with contrail picture is added. A little inspection was done to check and remove for dirty picture, where there is too much additional 'information' on the cloud picture such as building or landscape. This cleaning step is crucial as the project would like to deploy a deep learning model in the real condition.
+Initially, CCSN dataset (Cirrus cumulus stratus nimbus (CCSN) database, 2019) which classify cloud into 10 types + 1 contrail is being collected. For simplicity and as a prove concet of Deep Learning, this dataset is modified, merging some cloud types into 3 types of cloud based on their height level with contrail picture is added. A little inspection was done to check and remove for dirty picture, where there is too much additional 'information' on the cloud picture such as building or landscape. This cleaning step is crucial as the project would like to deploy a deep learning model in the real condition.
+
+<p align="center" width="100%">
+    <img width="70%" src="./assets/pictures/datasets.png"> 
+</p>
+<p align="center">Figure 3. Datasets</p>
 
 Regarding the total pictures for the 4 categories, there is a data imbalance between cloud images and contrail images. There are 900 images of each cloud type and fewer than 300 contrail images when this dataset was first downloaded. For this reason, I looked for additional datasets from the image repository, such as flickr.com. By using code from [pyimgdata](https://github.com/jeffheaton/pyimgdata) (Heaton, 2020) which was developed by [Jeff Heaton](https://www.heatonresearch.com/), I can bulk download images from Flickr by using spesific keyword and save the images to my Google Colab environment. The final datasets contain 600 pictures of each type of cloud and contrail, so it was 2400 images in total. The data was further split into 60% (360*4 images) for the training dataset, 20% (120*4 images) for validation and 20% (120*4 images) for testing.
 
@@ -56,7 +62,7 @@ Experiment conducted by deploying the Tensor Flow model on a mobile phone based 
 ## Bibliography
 1. Cai, K. and Wang, H. (2017) Cloud classification of satellite image based on convolutional neural networks. Available at: https://doi.org/10.1109/icsess.2017.8343049.
 https://doi.org/10.1088/1742-6596/1617/1/012089.
-2. Cirrus cumulus stratus nimbus (CCSN) database (no date). Available at: https://doi.org/10.7910/DVN/CADDPD.
+2. Cirrus cumulus stratus nimbus (CCSN) database (2019). Available at: https://doi.org/10.7910/DVN/CADDPD.
 3. Chen, T., Rossow, B, W. and Zhang, Y. (2000) "Radiative effects of cloud-type variations," , 13(1),p. 264-286. Available at: https://doi.org/10.1175/1520-0442(2000)013<0264:reoctv>2.0.co;2.
 4. Guo, Y. et al. (2020) "Cloud Detection for Satellite Imagery Using Deep Learning," Journal of physics. Conference series, 1617(1),p. 012089-012089. Available at: https://doi.org/10.1088/1742-6596/1617/1/012089.
 5. Heaton, J. (2020) Pyimgdata, GitHub. Available at: https://github.com/jeffheaton/pyimgdata (Accessed: 23 April 2024). 
