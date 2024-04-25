@@ -2,7 +2,7 @@
 
 Author name: Satria Mitra Utama<br> 
 Github repo: https://github.com/satria-mitra/CASA0018-Cloud-Classification <br> 
-Video presentation: youtube <br> 
+Video presentation: [youtube](https://www.youtube.com/watch?v=XEWchqH6nAQ) <br> 
 
 ## Introduction
 Clouds play a crucial role in our daily lives, affecting everything from the weather to the climate. Cloud types have an impact of Earth's energy balance (Hartmann, L, D., Ockert-Bell, M. and Michelsen, L, M., 1992) and global radiation.  (Chen, T., Rossow, B, W. and Zhang, Y., 2000). Thus, understanding cloud is an important task in environmental monitoring and meteorology to improve weather prediction and assessing climate models. Thus, understanding cloud is an important task in environmental monitoring and meteorology to improve weather prediction and assessing climate models. This project will explore the use of Deep Learning models to automatically classify and identify different types of clouds based on ground-based cloud images. 
