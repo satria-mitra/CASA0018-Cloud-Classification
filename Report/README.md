@@ -13,7 +13,7 @@ Luke Howard in 1802 proposed cloud classification into three types, Cirrus, Cumu
     <img width="60%" src="./assets/pictures/bom.jpeg"> 
 </p>
 
-Until now, observations of cloud types by meteorologists are still mostly done manually using the human eye. Even though the human eye can recognize cloud types well, there are still many differences of opinion among meteorologists in recognizing cloud types. This is where Deep learning methods come into play, as they can automatically extract features from cloud images and classify them. This is where Deep learning methods come into play, as they can automatically extract features from cloud images and classify them.Some Deep Learning method use cloud images from satelite data (Cai, K. and Wang, H., 2017) (Guo, Y. et al., 2020) for cloud classification, while others use ground-based cloud images captured by instruments like the total sky imager (Zhu, T., Liang, W. and Guo, Y., 2021).
+Until now, observations of cloud types by meteorologists are still mostly done manually using the human eye. Even though the human eye can recognize cloud types well, there are still many differences of opinion among meteorologists in recognizing cloud types. This is where Deep learning methods come into play, as they can automatically extract features from cloud images and classify them.Some Deep Learning method use cloud images from satelite data (Cai, K. and Wang, H., 2017) (Guo, Y. et al., 2020) for cloud classification, while others use ground-based cloud images captured by instruments like the total sky imager (Zhu, T., Liang, W. and Guo, Y., 2021).
 The goal of this project is to develop a deep learning model that can accurately classify different types of clouds based on ground-based cloud images 
 
 
@@ -58,7 +58,7 @@ https://doi.org/10.1088/1742-6596/1617/1/012089.
 3. Chen, T., Rossow, B, W. and Zhang, Y. (2000) "Radiative effects of cloud-type variations," , 13(1),p. 264-286. Available at: https://doi.org/10.1175/1520-0442(2000)013<0264:reoctv>2.0.co;2.
 4. Guo, Y. et al. (2020) "Cloud Detection for Satellite Imagery Using Deep Learning," Journal of physics. Conference series, 1617(1),p. 012089-012089. Available at: https://doi.org/10.1088/1742-6596/1617/1/012089.
 5. Heaton, J. (2020) Pyimgdata, GitHub. Available at: https://github.com/jeffheaton/pyimgdata (Accessed: 23 April 2024). 
-6. Hartmann, L, D., Ockert-Bell, M. and Michelsen, L, M. (1992) "The Effect of Cloud Type on Earth's Energy Balance: Global Analysis," American Meteorological Society, 5(11),p. 1281-1304. Available at: https://doi.org/10.1175/1520-0442(1992)005<1281:teocto>2.0.co;2.
+6. Hartmann, L, D., Ockert-Bell, M. and Michelsen, L, M. (1992) "The Effect of Cloud Type on Earth's Energy Balance: Global Analysis," American Meteorological Society, 5(11),p. 1281-1304. Available at: https://doi.org/10.1175/1520-0442(1992)005
 7. World Meteorological Organization, 1975. Manual on the Observation of Clouds and Other Meteors. Secretariat of the World Meteorological Organization.
 8. Zhu, T., Liang, W. and Guo, Y. (2021) Cloud Classification of Ground-based Cloud Images based on Convolutional Neural Network. Available at: https://doi.org/10.1088/1742-6596/2035/1/012020.
 
